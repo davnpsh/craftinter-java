@@ -1,4 +1,4 @@
-# craftinter (java)
+# craftinter (Java)
 
 Java implementation of the contents of the book **Crafting Interpreters** by Robert N.
 
