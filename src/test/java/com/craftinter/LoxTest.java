@@ -5,12 +5,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 /**
- * Unit test for simple App.
+ * Unit testing
  */
-public class AppTest {
+public class LoxTest {
 
     /**
-     * Rigorous Test :-)
+     * Example test
      */
     @Test
     public void shouldAnswerWithTrue() {

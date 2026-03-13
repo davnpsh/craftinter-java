@@ -94,7 +94,7 @@
             <artifactId>exec-maven-plugin</artifactId>
             <version>3.6.3</version>
             <configuration>
-            	<mainClass>com.craftinter.App</mainClass>
+            	<mainClass>com.craftinter.Lox</mainClass>
             </configuration>
         </plugin>
       </plugins>

@@ -1,9 +1,6 @@
 package com.craftinter;
 
-/**
- * Hello world!
- */
-public class App {
+public class Lox {
 
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
