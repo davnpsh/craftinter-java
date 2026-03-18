@@ -104,7 +104,12 @@ class Scanner {
 				}
 				// multi-line comment
 				else if (match('*')) {
-					while (peek() != '*' && peekNext() != '/' && !isAtEnd()) advance();
+					while (peek() != '*' && peekNext() != '/' && !isAtEnd()) {
+						// consider newlines
+						if (advance() == '\n') {
+							line++;
+						}
+					}
 					// consume the closing part "*/"
 					current += 2;
 				}
