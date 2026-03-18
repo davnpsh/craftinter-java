@@ -98,9 +98,15 @@ class Scanner {
 				addToken(match('=') ? GREATER_EQUAL : GREATER);
 				break;
 			case '/':
-				// comment
+				// single-line comment
 				if (match('/')) {
 					while (peek() != '\n' && !isAtEnd()) advance();
+				}
+				// multi-line comment
+				else if (match('*')) {
+					while (peek() != '*' && peekNext() != '/' && !isAtEnd()) advance();
+					// consume the closing part "*/"
+					current += 2;
 				}
 				// not comment
 				else {
