@@ -1,6 +1,6 @@
-package com.craftinter;
+package com.craftinter.lox;
 
-import static com.craftinter.TokenType.*;
+import static com.craftinter.lox.TokenType.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;

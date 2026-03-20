@@ -1,7 +1,3 @@
-.mvn
-target/
-
-# maven wrapper
-mvnw**
+out/
 
 **.lox

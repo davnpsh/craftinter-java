@@ -1,25 +1,37 @@
-# craftinter (Java)
+# craftinter
 
-Java implementation of the contents of the book **Crafting Interpreters** by Robert N.
+Java and C implementations of the contents of the book **Crafting Interpreters** by Robert N.
 
-## Build and run
+## Commands
 
-### With CLI
+Clean:
 
 ```sh
-mvn compile exec:java
+make clean
 ```
 
-Passing a file as an argument:
+### Java
+
+Build:
 
 ```sh
-mvn compile exec:java -Dexec.args="./example.lox"
+make java build
 ```
 
-### Using mvnw
-
-Prepare the wrapper for use in a code editor or IDE (like Zed):
+Run:
 
 ```sh
-mvn wrapper:wrapper
+make java run FILE="$PWD/file.lox"
+```
+
+Package:
+
+```sh
+make java package
+```
+
+This will generate a binary in `./out`. To run it:
+
+```sh
+java -jar out/jlox.jar
 ```

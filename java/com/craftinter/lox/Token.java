@@ -1,4 +1,4 @@
-package com.craftinter;
+package com.craftinter.lox;
 
 class Token {
 
